@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset ="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.min.js"></script>
+      <script src="script.js"></script>
+      <title>Firebase Application</title>
+   </head>
+    
+   
+   <body ng-app="myApp">
+     <div ng-view></div>
+     
+     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-firestore.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA-IqO-fbdAETQokPaBWQFEg5CNEofm-pg",
+        authDomain: "electron-test-93183.firebaseapp.com",
+        databaseURL: "https://electron-test-93183.firebaseio.com",
+        projectId: "electron-test-93183",
+        storageBucket: "electron-test-93183.appspot.com",
+        messagingSenderId: "744315523827"
+      };
+      firebase.initializeApp(config);
+
+      const auth=firebase.auth();
+      const db=firebase.firestore();
+      
+    </script>
+     
+   </body>
+</html>

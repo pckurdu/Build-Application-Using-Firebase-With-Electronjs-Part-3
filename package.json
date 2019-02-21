@@ -1,0 +1,14 @@
+{
+  "name": "electron-firebase",
+  "version": "1.0.0",
+  "description": "build application using firebase with electronjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "pckurdu",
+  "license": "ISC"
+}
